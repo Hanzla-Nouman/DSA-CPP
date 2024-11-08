@@ -1,6 +1,2 @@
-while (num  >0)
-{
-
-    sum = sum + num%10;
-    num = num/10;
-}
+cout<< findTarget(nums,4,90);
+//     return 0;

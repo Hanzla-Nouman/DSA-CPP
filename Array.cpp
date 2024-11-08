@@ -22,6 +22,16 @@ int findTarget(int arr[],int size,int target){  // Linear Serach
      return -1;
 }
 
+void reverseArr(int arr[],int size){
+      int start = 0, end = size-1;
+      while (start<end)
+      {
+        swap(arr[start],arr[end]);
+        start++;end--;
+      }
+      
+}
+
 int main()
 {
       int marks[5] = {67,33,90,89,95};
@@ -62,13 +72,25 @@ int size = 5;
 //     cout<<"Smallest Index: "<<sindex <<endl;
 
 int nums[] ={12,14,16,18};   // Pass by reference
- changeArr(nums,4);
- cout<<"In main"<<endl;
+//  changeArr(nums,4);
+//  cout<<"In main"<<endl;
+//  for (int i = 0; i < 4; i++)
+//  {
+//    cout<< nums[i]<<endl;
+//  }
+ 
+// cout<< findTarget(nums,4,90);
+//     return 0;
+
+
+int nums2[] ={12,14,16,18};   
+
+
+reverseArr(nums2,4);
  for (int i = 0; i < 4; i++)
  {
-   cout<< nums[i]<<endl;
+   cout<< nums2[i]<<" ";
  }
- 
-cout<< findTarget(nums,4,90);
-    return 0;
+cout<<endl;
+return 0;
 }
